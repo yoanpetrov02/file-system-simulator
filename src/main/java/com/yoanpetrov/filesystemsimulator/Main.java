@@ -5,8 +5,6 @@ import com.yoanpetrov.filesystemsimulator.exceptions.FileSystemException;
 import com.yoanpetrov.filesystemsimulator.filesystem.FileSystem;
 import com.yoanpetrov.filesystemsimulator.parser.OptionParser;
 
-// TODO fix throws declaration formatting everywhere
-// TODO document FileSystem
 public class Main {
 
 	private static final Scanner INPUT = new Scanner(System.in);
@@ -46,6 +44,3 @@ public class Main {
 			}
 		}
 	}
-}
-// src\main\resources\containers\testfilesystem.dat
-// 1048576
