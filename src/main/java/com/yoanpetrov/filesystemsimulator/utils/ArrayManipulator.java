@@ -136,9 +136,4 @@ public class ArrayManipulator {
 		}
 		return count;
 	}
-
-	public static void main(String[] args) {
-		String str = "test string"; // 11
-		System.out.println(getElementCount(str.getBytes()));
-	}
 }

@@ -104,8 +104,4 @@ public class StringManipulator {
 		}
 		return substring(input, start, end);
 	}
-
-	public static void main(String[] args) {
-		System.out.println(removeQuotes("when the"));
-	}
 }
