@@ -119,7 +119,7 @@ mvn clean install
 After building the project, open the project directory with your IDE of choice and run it from the `Main.java` file or run the generated .jar file from the `target` folder.
 
 ---
-Upon starting the project, the system will ask for the path to container file, as well as the maximum size of that file:
+Upon starting the project, the system will ask for the path to container file, as well as the maximum size of that file:\
 ![image](https://github.com/yoanpetrov02/file-system-simulator/assets/87146784/f2f1e85a-c568-4762-a1aa-621f8c6fdee1)\
 You have to provide a full path, including the name of the file (it doesn't have to be created in advance) in order for the program to work. Example:
 ```
