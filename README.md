@@ -16,6 +16,7 @@
     * [Command usages](#commandusages)
 * [Installation guide](#installation)
   * [Windows](#windows)
+* [Conclusion](#conclusion)
 
 <a name="overview"></a>
 ## Overview
@@ -130,6 +131,14 @@ You have to provide a full path, including the name of the file (it doesn't have
 C:\test\filesystem.dat
 ```
 After providing the path, you need to provide a file size in bytes (preferrably a power of 2). If everything went OK, you can now use the application.
+
+<a name="conclusion"></a>
+## Conclusion
+
+This project was written as part of a course task. My intention is to provide more features to it, such as:
+- Loading an existing file system from a file.
+- Implement deduplication.
+- Clean up the code and fix minor bugs or design flaws.
 
 
 
