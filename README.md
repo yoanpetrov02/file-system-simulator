@@ -73,5 +73,18 @@ Whenever the app starts, the user can execute the `help` command to see the usag
 ---
 
 ## Installation guide
-
+### Windows
+Navigate to a directory where you want to install the system. Open cmd and clone the repository:
+```
+git clone https://github.com/yoanpetrov02/file-system-simulator.git
+```
+Afterwards, use the provided maven wrapper if you don't have Maven installed to build the project:
+```
+mvnw clean install
+```
+If you have Maven **3.9.2** installed, you can instead just use the `mvn` command:
+```
+mvn clean install
+```
+After building the project, open the project directory with your IDE of choice and run it from the `Main.java` file or run the generated .jar file from the `target` folder.
   
