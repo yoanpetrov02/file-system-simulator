@@ -23,7 +23,7 @@ public class Bitmap extends Block {
 	public void setBit(int whichBit) {
 		int indexInBytesArr = whichBit / 8;
 		int position = 7 - (whichBit - indexInBytesArr * 8);
-		bytes[indexInBytesArr] |= 1 << position; // sets the bit at position to 1
+		bytes[indexInBytesArr] |= (byte) (1 << position); // sets the bit at position to 1
 	}
 
 	/**
@@ -36,7 +36,7 @@ public class Bitmap extends Block {
 	public void resetBit(int whichBit) {
 		int indexInBytesArr = whichBit / 8;
 		int position = 7 - (whichBit - indexInBytesArr * 8);
-		bytes[indexInBytesArr] &= ~(1 << position); // sets the bit at position to 0
+		bytes[indexInBytesArr] &= (byte) ~(1 << position); // sets the bit at position to 0
 	}
 
 	/**

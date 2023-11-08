@@ -39,22 +39,6 @@ public class SuperBlock {
 		file.skipBytes(512 - BYTES_TAKEN_IN_FILE);
 	}
 
-	/**
-	 * Reads the super block from the given file, starting at the file's current position.
-	 *
-	 * @param file the file to read the super block from.
-	 */
-	public void read(RandomAccessFile file)
-			throws IOException {
-		blockSize = file.readShort();
-		totalBlockCount = file.readInt();
-		maxSizeBytes = file.readLong();
-		inodeBitmapOffset = file.readInt();
-		dataBitmapOffset = file.readInt();
-		inodeBlockOffset = file.readInt();
-		dataBlockOffset = file.readInt();
-	}
-
 	public short getBlockSize() {
 		return blockSize;
 	}

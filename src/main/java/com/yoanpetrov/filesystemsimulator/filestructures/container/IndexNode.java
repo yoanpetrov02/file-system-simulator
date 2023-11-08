@@ -31,13 +31,6 @@ public class IndexNode {
 		initialize();
 	}
 
-	public IndexNode(String name, FileType type)
-			throws FileSystemException {
-		this();
-		setName(name);
-		this.type = type;
-	}
-
 	/**
 	 * Writes the index node to the given file, at the file's current position.
 	 *
