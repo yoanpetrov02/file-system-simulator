@@ -1,13 +1,9 @@
 package com.yoanpetrov.filesystemsimulator.filestructures.container;
 
-import com.yoanpetrov.filesystemsimulator.Testable;
-
 /**
  * Represents a bitmap file system structure.
  */
-public class Bitmap
-		extends Block
-		implements Testable {
+public class Bitmap extends Block {
 
 	public Bitmap() {
 		super();
@@ -84,27 +80,5 @@ public class Bitmap
 			}
 		}
 		return -1;
-	}
-
-	/**
-	 * Prints useful debugging information about the object.
-	 */
-	@Override
-	public void printDebug() {
-		for (byte value : bytes) {
-			System.out.print(Integer.toBinaryString(value));
-		}
-	}
-
-	/**
-	 * Prints the bits of a byte on the screen.
-	 *
-	 * @param bits the byte to print the bits of.
-	 */
-	public static void printBits(byte bits) {
-		System.out.println("Bits:");
-		for (int i = 7; i >= 0; i--) {
-			System.out.println(bits & (1 << i));
-		}
 	}
 }

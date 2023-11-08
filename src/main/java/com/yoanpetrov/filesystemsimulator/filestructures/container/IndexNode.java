@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Arrays;
 
-import com.yoanpetrov.filesystemsimulator.Testable;
 import com.yoanpetrov.filesystemsimulator.exceptions.FileSystemException;
 import com.yoanpetrov.filesystemsimulator.filestructures.data.FileType;
 import com.yoanpetrov.filesystemsimulator.utils.ArrayManipulator;
@@ -13,7 +12,7 @@ import com.yoanpetrov.filesystemsimulator.utils.ArrayManipulator;
  * Represents an index node file system structure. An index node contains information about a file,
  * like its size, name and references to the data blocks that the file occupies.
  */
-public class IndexNode implements Testable {
+public class IndexNode {
 
 	public static final int INODE_SIZE = 256;
 
@@ -193,19 +192,6 @@ public class IndexNode implements Testable {
 	 */
 	public boolean isMaxSize() {
 		return allocatedBlockCount >= MAX_DIRECT_BLOCKS;
-	}
-
-	/**
-	 * Prints useful debugging information about the object.
-	 */
-	@Override
-	public void printDebug() {
-		System.out.printf("Type: %s%n", type == FileType.DIRECTORY ? "Directory" : "File");
-		System.out.printf("Size: %d%n", size);
-		System.out.printf("Name: %s%n", this.getName());
-		System.out.printf("Name size: %s%n", nameSize);
-		System.out.printf("Allocated block count: %d%n", allocatedBlockCount);
-		System.out.printf("Direct blocks: %s%n", Arrays.toString(directBlocks));
 	}
 
 	/**

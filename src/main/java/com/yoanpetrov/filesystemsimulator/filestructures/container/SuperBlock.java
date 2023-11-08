@@ -2,12 +2,11 @@ package com.yoanpetrov.filesystemsimulator.filestructures.container;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import com.yoanpetrov.filesystemsimulator.Testable;
 
 /**
  * Represents a super block file system structure.
  */
-public class SuperBlock implements Testable {
+public class SuperBlock {
 
 	static final int BYTES_TAKEN_IN_FILE = 30;
 
@@ -78,20 +77,6 @@ public class SuperBlock implements Testable {
 
 	public int getDataBlockOffset() {
 		return dataBlockOffset;
-	}
-
-	/**
-	 * Prints useful debugging information about the object.
-	 */
-	@Override
-	public void printDebug() {
-		System.out.printf("Block size: %d%n", blockSize);
-		System.out.printf("Total number of blocks: %d%n", totalBlockCount);
-		System.out.printf("Max file system size: %d%n", maxSizeBytes);
-		System.out.printf("Inode bitmap offset: %d%n", inodeBitmapOffset);
-		System.out.printf("Data bitmap offset: %d%n", dataBitmapOffset);
-		System.out.printf("Inode block offset: %d%n", inodeBlockOffset);
-		System.out.printf("Data block offset: %d%n", dataBlockOffset);
 	}
 
 	/**
