@@ -1,3 +1,3 @@
-# CourseTaskFileSystem
+# Simple Unix File System Simuilator
 
-This project simulates a simplified UNIX file system.
+SUFSS
