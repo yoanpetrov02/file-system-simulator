@@ -4,6 +4,8 @@
 
 ## Table of contents
 * [Overview](#overview)
+* [Installation guide](#installation)
+  * [Windows](#windows)
 * [How it works](#howitworks)
   * [File structures](#filestructures)
     * [Super block](#superblock)
@@ -14,8 +16,6 @@
   * [File system commands](#commands)
     * [Command reference](#commandreference)
     * [Command usages](#commandusages)
-* [Installation guide](#installation)
-  * [Windows](#windows)
 * [Conclusion](#conclusion)
 
 <a name="overview"></a>
@@ -27,6 +27,39 @@ A Unix file system simulator, written in Java 17. This file system uses some of 
 - Bitmaps and others.
 
 ---
+
+<a name="installation"></a>
+## Installation guide
+
+<a name="windows"></a>
+### Windows
+Navigate to a directory where you want to install the system. Open cmd and `cd` to that directory, for example:
+```
+cd C:\test\file-system-simulator
+```
+Then, clone the repository:
+```
+git clone https://github.com/yoanpetrov02/file-system-simulator.git
+```
+Afterwards, use the provided maven wrapper if you don't have Maven installed to build the project:
+```
+mvnw clean install
+```
+If you have Maven **3.9.2** installed, you can instead just use the `mvn` command:
+```
+mvn clean install
+```
+
+After building the project, open the project directory with your IDE of choice and run it from the `Main.java` file or run the generated .jar file from the `target` folder.
+
+---
+Upon starting the project, the system will ask for the path to container file, as well as the maximum size of that file:\
+![image](https://github.com/yoanpetrov02/file-system-simulator/assets/87146784/f2f1e85a-c568-4762-a1aa-621f8c6fdee1)\
+You have to provide a full path, including the name of the file (it doesn't have to be created in advance) in order for the program to work. Example:
+```
+C:\test\filesystem.dat
+```
+After providing the path, you need to provide a file size in bytes (preferrably a power of 2). If everything went OK, you can now use the application.
 
 <a name="howitworks"></a>
 ## How it works
@@ -98,39 +131,6 @@ Whenever the app starts, the user can execute the `help` command to see the usag
 - `export`: `export <file_name> <ext_path>`
 
 ---
-
-<a name="installation"></a>
-## Installation guide
-
-<a name="windows"></a>
-### Windows
-Navigate to a directory where you want to install the system. Open cmd and `cd` to that directory, for example:
-```
-cd C:\test\file-system-simulator
-```
-Then, clone the repository:
-```
-git clone https://github.com/yoanpetrov02/file-system-simulator.git
-```
-Afterwards, use the provided maven wrapper if you don't have Maven installed to build the project:
-```
-mvnw clean install
-```
-If you have Maven **3.9.2** installed, you can instead just use the `mvn` command:
-```
-mvn clean install
-```
-
-After building the project, open the project directory with your IDE of choice and run it from the `Main.java` file or run the generated .jar file from the `target` folder.
-
----
-Upon starting the project, the system will ask for the path to container file, as well as the maximum size of that file:\
-![image](https://github.com/yoanpetrov02/file-system-simulator/assets/87146784/f2f1e85a-c568-4762-a1aa-621f8c6fdee1)\
-You have to provide a full path, including the name of the file (it doesn't have to be created in advance) in order for the program to work. Example:
-```
-C:\test\filesystem.dat
-```
-After providing the path, you need to provide a file size in bytes (preferrably a power of 2). If everything went OK, you can now use the application.
 
 <a name="conclusion"></a>
 ## Conclusion
