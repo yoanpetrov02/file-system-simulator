@@ -19,7 +19,7 @@
 
 <a name="overview"></a>
 ## Overview
-A Unix file system simulator, written in Java. This file system uses some of the simpler data structures, used in file systems, including:
+A Unix file system simulator, written in Java 17. This file system uses some of the simpler data structures, used in file systems, including:
 - Index nodes
 - Super block
 - Data blocks
@@ -103,7 +103,11 @@ Whenever the app starts, the user can execute the `help` command to see the usag
 
 <a name="windows"></a>
 ### Windows
-Navigate to a directory where you want to install the system. Open cmd and clone the repository:
+Navigate to a directory where you want to install the system. Open cmd and `cd` to that directory, for example:
+```
+cd C:\test\file-system-simulator
+```
+Then, clone the repository:
 ```
 git clone https://github.com/yoanpetrov02/file-system-simulator.git
 ```
