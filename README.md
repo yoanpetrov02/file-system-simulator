@@ -135,7 +135,7 @@ Whenever the app starts, the user can execute the `help` command to see the usag
 <a name="conclusion"></a>
 ## Conclusion
 
-This project was written as part of a course task. My intention is to provide more features to it, such as:
+My intention is to provide more features to this project, such as:
 - Loading an existing file system from a file.
 - Implement deduplication.
 - Clean up the code and fix minor bugs or design flaws.
